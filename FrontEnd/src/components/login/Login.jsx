@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Login.css'
 
-export default function Login() {
+const Login = () => {
+
   const [user, setUser] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
@@ -25,7 +26,7 @@ export default function Login() {
       setError('credenciais incorretas!')
     }
   }
-     
+
   return (
     <div>
       <header>
@@ -53,8 +54,10 @@ export default function Login() {
               <button type="submit">Enviar</button>
             </div>
         </form>
-   </div>
+    </div>
   </div>
   )
 }
+
+export default Login;
 
