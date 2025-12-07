@@ -7,8 +7,7 @@ function App() {
 
   return (
     <div className='container'>
-    <Login/>
-    
+      <h1>olá</h1>
     </div>
   )
 }
