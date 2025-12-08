@@ -11,16 +11,14 @@ const Login = () => {
 
   async function fazerLogin() {
 
-    setError('')
-    setUser('')
-    setPassword('')
-
     const res = await fetch(`http://localhost:5000/usuarios?user=${user}&password=${password}`)
     const data = await res.json()
 
 
     if (data.length > 0) {
-      navigate('/CadastrarUser')
+      navigate('/App')
+      setUser('')
+      setPassword('')
 
     }else {
       setError('credenciais incorretas!')
@@ -34,18 +32,20 @@ const Login = () => {
       </header>
 
     <div className='container'>
-      <h1>imagem logo</h1>
+      <div className="img-container">
+        <img src="./logo.webp" alt=""/>
+      </div>
 
         <form onSubmit={(e) => { e.preventDefault(), fazerLogin() }}> 
           <h2>Login</h2>
             <label>
                 <span>Usuário:</span>
-                <input type="text" name='user' placeholder='Usuário' onChange={(e) => setUser(e.target.value)} value={user}/>
+                <input className='inputs' type="text" name='user' placeholder='Usuário' required onChange={(e) => setUser(e.target.value)} value={user}/>
             </label>
 
             <label>
                 <span>Senha:</span>
-                <input type="password" name='password' placeholder='Senha' onChange={(e) => setPassword(e.target.value)} value={password}/>
+                <input className='inputs' type="password" name='password' placeholder='Senha' required onChange={(e) => setPassword(e.target.value)} value={password}/>
             </label>
 
              {error && <p className="erro">{error}</p>}

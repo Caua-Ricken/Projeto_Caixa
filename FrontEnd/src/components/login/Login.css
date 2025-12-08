@@ -13,10 +13,7 @@ form{
     flex-direction: column;
     width: 40rem;
     text-align: center;
-    border: 2px solid black;
-    border-radius: 1.5rem;
-    padding: 1rem;
-    background-color: #ccc;
+    padding: 1rem;  
 }
 
 h1{
@@ -42,25 +39,35 @@ span{
     margin-bottom: 0.6rem;
 }
 
-input{
+.inputs{
     padding: 1.2rem;
     border-radius: 0.5rem;
-    border: none;
     text-align: center;
     font-size: 2rem;
+    background-color: rgba(77, 77, 77, 0.5);
+    border: 2px solid rgba(42, 42, 42, 0.5);
     outline: none;
+}
+
+.inputs:focus{
+    border-color: rgb(74, 74, 253);
+    box-shadow: 0 0 1rem rgba(41, 30, 243, 0.3);
 }
 
 button{
     padding: 1rem 4rem;
     font-size: 1.8rem;
+    margin-top: 1rem;
     border: none;
     border-radius: 0.5rem;
     transition: 0.4s;
+    background-color: rgb(74, 74, 253);
+    transition: 0.8s;
 }
 
 button:hover{
-    background-color: rgb(74, 74, 253);
+    background-color: rgb(29, 29, 244);
+    color: white;
 }
 
 .erro{
@@ -80,5 +87,14 @@ header{
     font-weight: 600;
     color: white;
     margin-left: 8rem;
+}
+
+img{
+    width: 25rem;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
 }
 
