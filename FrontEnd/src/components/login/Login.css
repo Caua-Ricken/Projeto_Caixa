@@ -22,23 +22,6 @@ h1{
     text-align: center;
 }
 
-h2{
-    font-size: 3.8rem;
-    margin-bottom: 2rem;
-}
-
-label{
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    margin-bottom: 2rem;
-}
-
-span{
-    font-size: 1.8rem;
-    margin-bottom: 0.6rem;
-}
-
 .inputs{
     padding: 1.2rem;
     border-radius: 0.5rem;
@@ -47,6 +30,7 @@ span{
     background-color: rgba(77, 77, 77, 0.5);
     border: 2px solid rgba(42, 42, 42, 0.5);
     outline: none;
+    margin-bottom: 2rem;
 }
 
 .inputs:focus{
@@ -57,7 +41,6 @@ span{
 button{
     padding: 1rem 4rem;
     font-size: 1.8rem;
-    margin-top: 1rem;
     border: none;
     border-radius: 0.5rem;
     transition: 0.4s;
@@ -96,5 +79,21 @@ img{
 .img-container{
     display: flex;
     justify-content: center;
+}
+
+.camp{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 2rem;
+}
+
+.camp-text{
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
 }
 

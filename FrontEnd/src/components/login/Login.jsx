@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Login.css'
+import Saudacao from '../saudação/Saudacao'
 
 const Login = () => {
 
@@ -37,15 +38,15 @@ const Login = () => {
       </div>
 
         <form onSubmit={(e) => { e.preventDefault(), fazerLogin() }}> 
-          <h2>Login</h2>
-            <label>
-                <span>Usuário:</span>
-                <input className='inputs' type="text" name='user' placeholder='Usuário' required onChange={(e) => setUser(e.target.value)} value={user}/>
+          <Saudacao />
+            <label className='camp'> 
+                <span className='camp-text'>Usuário:</span>
+                <input className='inputs' type="text" name='user' required onChange={(e) => setUser(e.target.value)} value={user}/>
             </label>
 
-            <label>
-                <span>Senha:</span>
-                <input className='inputs' type="password" name='password' placeholder='Senha' required onChange={(e) => setPassword(e.target.value)} value={password}/>
+            <label className='camp'>
+                <span className='camp-text'>Senha:</span>
+                <input className='inputs' type="password" name='password' required onChange={(e) => setPassword(e.target.value)} value={password}/>
             </label>
 
              {error && <p className="erro">{error}</p>}
