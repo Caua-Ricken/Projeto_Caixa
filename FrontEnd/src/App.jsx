@@ -6,12 +6,19 @@ import { Link } from 'react-router-dom'
 function App() {
 
   return (
+ 
       <div className="main-container">
+
+      <header className='topo-project'>
+        <h2 className='text-topo'>Implantação</h2>
+        <Link to='/'><i class="fa-regular fa-circle-xmark"></i></Link>
+      </header>
+
         <aside className="sidebar">
           <h2 className='name-topo'>navegação</h2>
           <ul>
             <li>
-              <a href="#">link 1</a>
+              <Link to='/CadastrarUser'><i class="fa-solid fa-user">usuario</i></Link>
             </li>
              <li>
               <a href="#">link 2</a>

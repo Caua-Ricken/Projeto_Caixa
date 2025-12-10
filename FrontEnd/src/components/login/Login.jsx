@@ -9,11 +9,16 @@ const Login = () => {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const navigate = useNavigate()
+  const [loading, setLoading] = useState(false)
 
   async function fazerLogin() {
 
+     setLoading(true)
+
     const res = await fetch(`http://localhost:5000/usuarios?user=${user}&password=${password}`)
     const data = await res.json()
+
+     setLoading(false)
 
 
     if (data.length > 0) {
@@ -49,7 +54,9 @@ const Login = () => {
                 <input className='inputs' type="password" name='password' required onChange={(e) => setPassword(e.target.value)} value={password}/>
             </label>
 
-             {error && <p className="erro">{error}</p>}
+             {loading && <p className="loading">Carregando...</p>}
+            
+             <p className="erro">{error}</p>
 
             <div className="play">
               <button type="submit">Enviar</button>

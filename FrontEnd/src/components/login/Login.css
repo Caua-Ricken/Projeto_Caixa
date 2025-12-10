@@ -16,12 +16,6 @@ form{
     padding: 1rem;  
 }
 
-h1{
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
 .inputs{
     padding: 1.2rem;
     border-radius: 0.5rem;
@@ -30,7 +24,7 @@ h1{
     background-color: rgba(77, 77, 77, 0.5);
     border: 2px solid rgba(42, 42, 42, 0.5);
     outline: none;
-    margin-bottom: 2rem;
+    margin-bottom: 1.4rem;
 }
 
 .inputs:focus{
@@ -40,9 +34,11 @@ h1{
 
 button{
     padding: 1rem 4rem;
+    margin-top: 2rem;
     font-size: 1.8rem;
     border: none;
     border-radius: 0.5rem;
+    color: white;
     transition: 0.4s;
     background-color: rgb(74, 74, 253);
     transition: 0.8s;
@@ -62,7 +58,6 @@ header{
     width: 100%;
     background-color: rgb(74, 74, 253);
     padding: 1.6rem;
-    
 }
 
 .name-title{
@@ -86,7 +81,6 @@ img{
     display: flex;
     flex-direction: column;
     text-align: start;
-    margin-bottom: 2rem;
 }
 
 .camp-text{
@@ -97,3 +91,7 @@ img{
     margin-bottom: 0.6rem;
 }
 
+.loading{
+    font-size: 2rem;
+    font-weight: bold;
+}
