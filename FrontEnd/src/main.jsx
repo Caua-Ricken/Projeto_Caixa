@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import Login from './components/login/Login.jsx'
 import CadastrarUser from './routes/CadastrarUser.jsx'
+import Cadastrar from './routes/cadastros/Cadastrar.jsx'
 
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: '/App',
     element: <App/>
+  },
+  {
+    path: '/Cadastrar',
+    element: <Cadastrar/>
   }
 ])
 
