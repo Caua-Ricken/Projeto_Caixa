@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import { Link, useNavigate } from 'react-router-dom'
 
-
 function App() {
 
   const [loading, setLoading] = useState(false)
@@ -19,7 +18,6 @@ function App() {
       navigate('/')
     },2000)
   }
-
 
   const delaye = (e, path) => {
   e.preventDefault(); 
@@ -47,22 +45,22 @@ function App() {
           <div className="sidebar-links">
           <Link  onClick={(e) => delaye(e, "/Cadastrar")} className="nav-item">
             <i className="fa-solid fa-user"></i>
-            <span>Cadastrar</span>
+            <span className='nav-text'>Cadastrar</span>
           </Link>
 
           <Link to="/CadastrarUser" className="nav-item">
             <i className="fa-solid fa-clipboard"></i>
-            <span>Relatórios</span>
+            <span className='nav-text'>Relatórios</span>
           </Link>
 
           <Link to="/CadastrarUser" className="nav-item">
             <i className="fa-solid fa-gears"></i>
-            <span>Configurações</span>
+            <span className='nav-text'>Configurações</span>
           </Link>
 
           <Link to="/CadastrarUser" className="nav-item">
             <i className="fa-solid fa-circle-info"></i>
-            <span>Sobre</span>
+            <span className='nav-text'>Sobre</span>
           </Link>
           </div>    
            
