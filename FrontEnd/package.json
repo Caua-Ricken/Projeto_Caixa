@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server --watch data/loginDb.json --port 5000"
+    "server": "json-server --watch data/loginDb.json --port 5000",
+    "server1": "json-server --watch data/cadastrosDb.json --port 5001"
   },
   "dependencies": {
     "react": "^19.2.0",

@@ -1,0 +1,19 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "name": "Teste",
+      "cpf": "123",
+      "email": "teste@teste.com",
+      "city": "SC"
+    },
+    {
+      "id": "4ade",
+      "name": "kk",
+      "cpf": "55",
+      "email": "juru@ds",
+      "city": "tocantins"
+    }
+  ],
+  "funcionarios": []
+}
