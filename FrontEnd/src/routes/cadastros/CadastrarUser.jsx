@@ -33,7 +33,6 @@ const CadastrarUser = () => {
       city
     }
 
-
     const res = await fetch(url, {
       method: 'POST',
       headers: {
