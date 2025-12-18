@@ -41,6 +41,15 @@ const CadastrarUser = () => {
        body: JSON.stringify(cadClient)
     })
 
+const data = await res.json()
+
+if (!res.ok) {
+  alert('erro ao cadastrar')
+  return
+}
+
+alert('Cliente cadastrado com sucesso!')
+
     setName('')
     setCpf('')
     setEmail('')
