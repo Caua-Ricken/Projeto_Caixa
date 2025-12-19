@@ -1,0 +1,12 @@
+.div-cad-geral{
+    background-color: aqua;
+    width: 75%;
+    margin: 0 auto;
+    height: 80rem;
+    margin-top: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

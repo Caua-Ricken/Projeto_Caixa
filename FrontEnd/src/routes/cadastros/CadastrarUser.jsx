@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import './styles/styleCadUser.css'
 
 const url = 'http://localhost:5001/clientes'
 
@@ -59,7 +60,7 @@ alert('Cliente cadastrado com sucesso!')
 
 
   return (
-    <div>
+    <div className="div-cad-geral">
          <form onSubmit={handleSubmit}>
         <label>
           <span>Nome:</span>

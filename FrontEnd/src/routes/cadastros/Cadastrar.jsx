@@ -8,7 +8,7 @@ const Cadastrar = () => {
   const { delayedNavigate, loading } = Delay();
 
   return (
-    <div>
+    <div className='div-geral'>
       <header className='nav-cad-ger'>
         <p className='name-title'>Implantação</p>
 
