@@ -23,6 +23,9 @@ const CadastrarUser = () => {
   const [cpf, setCpf] = useState('')
   const [email, setEmail] = useState('')
   const [city, setCity] = useState('')
+  const [fone, setFone] = useState('')
+  const [number, setNumber] = useState('')
+  const [bairro, setBairro] = useState('')
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -31,7 +34,10 @@ const CadastrarUser = () => {
       name,
       cpf,
       email,
-      city
+      city,
+      fone,
+      number,
+      bairro,
     }
 
     const res = await fetch(url, {
@@ -41,8 +47,6 @@ const CadastrarUser = () => {
       },
        body: JSON.stringify(cadClient)
     })
-
-const data = await res.json()
 
 if (!res.ok) {
   alert('erro ao cadastrar')
@@ -54,6 +58,9 @@ alert('Cliente cadastrado com sucesso!')
     setName('')
     setCpf('')
     setEmail('')
+    setFone('')
+    setBairro('')
+    setNumber('')
     setCity('')
 
   }
@@ -77,12 +84,29 @@ alert('Cliente cadastrado com sucesso!')
           <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
         </label>
 
+        <label>
+          <span>telefone:</span>
+          <input type="number" value={fone} onChange={(e) => setFone(e.target.value)}/>
+        </label>
+
+        <label>
+          <span>Nº:</span>
+          <input type="number" value={number} onChange={(e) => setNumber(e.target.value)}/>
+        </label>
+
+        <label>
+          <span>bairro:</span>
+          <input type="text" value={bairro} onChange={(e) => setBairro(e.target.value)}/>
+        </label>
+
          <label>
           <span>cidade:</span>
           <input type="text" value={city} onChange={(e) => setCity(e.target.value)}/>
         </label>
 
-       <input type="submit" value='enviar' />
+     
+        <button type="submit">enviar</button>
+    
        
       </form>
     </div>

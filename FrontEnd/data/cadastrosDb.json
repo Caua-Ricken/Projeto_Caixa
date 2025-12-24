@@ -1,18 +1,31 @@
 {
   "clientes": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Teste",
       "cpf": "123",
       "email": "teste@teste.com",
       "city": "SC"
     },
     {
-      "id": "4ade",
-      "name": "kk",
-      "cpf": "55",
-      "email": "juru@ds",
-      "city": "tocantins"
+      "id": "564f",
+      "name": "",
+      "cpf": "",
+      "email": "",
+      "city": "",
+      "fone": "",
+      "number": "",
+      "bairro": ""
+    },
+    {
+      "id": "76f1",
+      "name": "guilherme",
+      "cpf": "999",
+      "email": "ghrsdhsrd@hvbh",
+      "city": "grasz",
+      "fone": "7789",
+      "number": "77",
+      "bairro": "hzd"
     }
   ],
   "funcionarios": []

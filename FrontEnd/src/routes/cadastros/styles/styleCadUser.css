@@ -1,5 +1,4 @@
 .div-cad-geral{
-    background-color: aqua;
     width: 75%;
     margin: 0 auto;
     height: 80rem;
@@ -8,5 +7,77 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.div-cad-geral form {
+    width: 100%; 
+    height: 100%; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    align-content: space-evenly; 
+    border-radius: 1rem;
+    gap: 30px; 
+    padding: 60px; 
+    background-color: rgba(139, 174, 197, 0.9); 
+    box-sizing: border-box; 
+}
+
+.div-cad-geral label:nth-child(1), 
+.div-cad-geral label:nth-child(3) {
+    grid-column: span 2; 
+}
+
+.div-cad-geral label {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem; 
+    font-weight: bold;
+    color: #333;
+}
+
+.div-cad-geral span {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.div-cad-geral input {
+    height: 55px; 
+    padding: 0 20px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+    font-size: 2rem;
+}
+
+.div-cad-geral input:focus {
+    background-color: #fff;
+    border-color: rgb(74, 74, 253);
+    outline: none;
+    box-shadow: 0 0 1rem rgba(41, 30, 243, 0.3);
+}
+
+.div-cad-geral button {
+    grid-column: span 2;     
+    width: 50%;               
+    justify-self: center;
+    height: 7rem;
+    margin-top: 30px;
+    background-color:rgb(74, 74, 253);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-transform: uppercase;
+}
+
+.div-cad-geral button:hover {
+    background-color:  rgb(29, 29, 244);
+    transform: translateY(-2px);
 }
 

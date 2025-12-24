@@ -22,13 +22,32 @@
     font-size: 2rem;
     color: white;
     text-decoration: none;
-    padding: 0 3rem;
-    border-bottom: 3px solid transparent; 
+    padding: 0.5rem 3rem; 
+    position: relative;  
+    display: inline-block;
+    transition: color 0.3s ease;
 }
 
-.Links-nav:active{
-    color: white;
-    
-    border-bottom: 3px solid #ffc107;
+.Links-nav::after {
+    content: '';
+    position: absolute;
+    left: 50%;            
+    bottom: 0;
+    width: 0;             
+    height: 3px;          
+    background-color: #fff; 
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%); 
+    border-radius: 5px;
 }
 
+.Links-nav.active::after,
+.Links-nav:hover::after {
+    width: 70%;          
+    background-color: #00d4ff;
+}
+
+
+.Links-nav.active {
+    color: #00d4ff;
+}

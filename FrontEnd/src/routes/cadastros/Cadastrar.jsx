@@ -1,5 +1,5 @@
 import { Delay } from '../../hooks/Delay'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { Outlet } from 'react-router-dom'
 import './Cadastrar.css'
 
@@ -13,21 +13,21 @@ const Cadastrar = () => {
         <p className='name-title'>Implantação</p>
 
         <div className='nav-cad-items'>
-          <Link to='.' className='Links-nav'>
+          <NavLink to='.' className='Links-nav' end>
           <span>Clientes</span>
-          </Link>
+          </NavLink>
 
-          <Link to='CadastrarCacamba' className='Links-nav'>
+          <NavLink to='CadastrarCacamba' className='Links-nav'>
           <span>Caçambas</span>
-          </Link>
+          </NavLink>
 
-          <Link to='CadastrarTruck' className='Links-nav'>
+          <NavLink to='CadastrarTruck' className='Links-nav'>
           <span>Caminhão</span>
-          </Link>
+          </NavLink>
 
-          <Link to='CadastrarFunc' className='Links-nav'>
+          <NavLink to='CadastrarFunc' className='Links-nav'>
           <span>Funcionario</span>
-          </Link>
+          </NavLink>
         </div>
 
         <Link onClick={(e) => delayedNavigate(e, "/App")}>
