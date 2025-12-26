@@ -6,27 +6,11 @@
       "cpf": "123",
       "email": "teste@teste.com",
       "city": "SC"
-    },
-    {
-      "id": "564f",
-      "name": "",
-      "cpf": "",
-      "email": "",
-      "city": "",
-      "fone": "",
-      "number": "",
-      "bairro": ""
-    },
-    {
-      "id": "76f1",
-      "name": "guilherme",
-      "cpf": "999",
-      "email": "ghrsdhsrd@hvbh",
-      "city": "grasz",
-      "fone": "7789",
-      "number": "77",
-      "bairro": "hzd"
     }
   ],
-  "funcionarios": []
+  "funcionarios": [
+    {
+      "id": "5c61"
+    }
+  ]
 }
